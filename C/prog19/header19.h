@@ -1,0 +1,2 @@
+
+void perfect(int num);

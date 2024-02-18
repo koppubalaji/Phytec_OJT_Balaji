@@ -1,0 +1,2 @@
+
+void armstrong(int num);

@@ -1,20 +1,22 @@
 
 
 #include<stdio.h>
-
-
+#include<string.h>
+#include<stdlib.h>
+typedef struct abc
+{
+	int marks;
+	char name[10];
+}a;
 int main()
 {
-
-	int arr[5]={1,2,3,6,5};
-
-	int *p;
-
-	p=arr;
-
-	printf("%d",*(p+2));
-	for(int i=0;i<5;i++)
-	{
-		printf("%p\n",(p+i));
-	}
+	a *b=(a*)malloc(sizeof(a));
+	b->marks=10;
+	strcpy(b->name,"balaji");
+	printf("%d %s",b->marks,b->name);
 }
+
+
+
+
+

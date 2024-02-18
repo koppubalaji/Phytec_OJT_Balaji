@@ -1,0 +1,2 @@
+
+void palindrome(int num);
