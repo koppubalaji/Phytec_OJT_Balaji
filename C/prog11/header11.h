@@ -1,0 +1,2 @@
+
+void mask(int num);
