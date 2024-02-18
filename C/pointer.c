@@ -1,30 +1,15 @@
+
+
 #include<stdio.h>
-
-
-void fun(int x)
-{
-	x++;
-	printf("%d\n",x);
-}
-
-
-void fun1(int *y)
-{
-	(*y)++;
-	printf("%d\n",*y);
-}
-
+#include<stdlib.h>
 
 int main()
-
 {
-	int a=5;
+	int *data;
 
-	fun(a);
-	printf("Without referencing\n");
-	printf("%d\n",a);
-	fun1(&a);
-	printf("With referencing\n");
-	printf("%d\n",a);
-	
+	data=(int *)malloc(sizeof(int));
+
+	*data=5;
+
+	printf("%d",*data);
 }
